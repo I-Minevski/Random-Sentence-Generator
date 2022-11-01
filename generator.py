@@ -21,4 +21,11 @@ while True:
     random_adverb=get_random_word(adverbs)
     random_detail=get_random_word(details)
     print(f"{random_name} from {random_place} {random_adverb} {random_verb} {random_noun}.")
-    input("Press [Enter] to generate a random sentence.")
+    command=input("Press [Enter] to generate a random sentence. Type [stop] to quit.")
+    if command=="stop":
+        break
+    elif command=="":
+        continue
+    else:
+        print("Invalid input! Please try again.")
+        command=input("Press [Enter] to generate a random sentence. Type [stop] to quit.")
