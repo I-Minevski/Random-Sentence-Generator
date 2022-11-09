@@ -13,6 +13,8 @@ nouns=["stones", "cake", "money", "apples", "napkins", "bottles", "laptop"]
 adverbs=["slowly", "quickly", "diligently", "warmly", "sadly",  "happily"]
 details=["at home", "near the river", "in the park", "at school", "in the hospital"]
 
+print("Greetings! This is your first random sentence.")
+
 while True:
     random_name=get_random_word(names)
     random_place=get_random_word(places)
@@ -24,8 +26,3 @@ while True:
     command=input("Press [Enter] to generate a random sentence. Type [stop] to quit.")
     if command=="stop":
         break
-    elif command=="":
-        continue
-    else:
-        print("Invalid input! Please try again.")
-        command=input("Press [Enter] to generate a random sentence. Type [stop] to quit.")
